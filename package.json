@@ -1,0 +1,21 @@
+{
+  "name": "file-management",
+  "version": "1.0.0",
+  "description": "poc microservice for management file on server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Supparerk23/node-file-management.git"
+  },
+  "author": "Supparerk23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Supparerk23/node-file-management/issues"
+  },
+  "homepage": "https://github.com/Supparerk23/node-file-management#readme",
+  "dependencies": {
+    "unzipper": "^0.10.11"
+  }
+}
