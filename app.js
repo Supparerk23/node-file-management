@@ -1,6 +1,8 @@
 const directoryPath = 'C:/git_file/zip_test';
 const locationZip = `${directoryPath}/raw`;
 const locationUnZip = `${directoryPath}/unzip`;
+const locationErrorUnZip = `${directoryPath}/error_unzip`;
+const locationBackupUnZip = `${directoryPath}/backup`;
 
 const typeFile = '.zip';
 const fs = require('fs');
@@ -37,9 +39,9 @@ async function app() {
         }
       }
 
-      let movePart = `${directoryPath}/error_unzip`;
+      let movePart = locationErrorUnZip;
       if(success_unzip==unzipSize){
-        movePart = `${directoryPath}/backup`;
+        movePart = locationBackupUnZip;
       }
 
       fs.rename(`${locationZip}/${file}`, `${movePart}/${file}`, function (err) {
